@@ -1,15 +1,15 @@
 <?php
     include('../dbaccess.php');
 //print_r( $gr->getRepoDetails('mii') );
-    session_start();
+//    session_start();
     $userId = $_SESSION['userId'];
     
 //    $userGHId= 'raulooo';
 //    $userId=1;
 //    $url = 'https://api.github.com/users/mikeal';
 //    $url = 'https://api.github.com/users/'.$userGHId.'/repos';
-    $url = 'https://api.github.com/user?access_token=577706b24c3264a6acfaff3795fab579060bd0c7';
-//    
+    $url = 'https://api.github.com/user?access_token='.$_SESSION['github_at'];
+//    echo $url
     $curl = curl_init();
 // Set some options - we are passing in a useragent too here
     curl_setopt_array($curl, array(

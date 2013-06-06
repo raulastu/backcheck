@@ -1,13 +1,12 @@
 <?php 
-    error_reporting(E_ALL);
-    ini_set('display_errors', '1');
+    include_once '../utils/globals.php';
     include_once '../dbaccess.php';
 //string(71) "access_token=577706b24c3264a6acfaff3795fab579060bd0c7&token_type=bearer"
     session_start();
     $userId = $_SESSION['userId'];
 //    include('dbaccess.php'); 
     require_once('../secrets.php'); //defines CLIENT_ID
-    error_reporting(-1);
+    
 
     $code = $_GET['code'];
 //    print_r($code);
@@ -54,13 +53,15 @@
     
     $sql = "UPDATE users set github_at = '".$access_token ."'
         WHERE user_id =".$userId;
-    echo $sql;
+//    echo $sql;
     mysql_query($sql);
 //    exec($sql);
     $_SESSION['github_at']=$access_token;
     
     include('get_gh_user.php');
     include('get_gh_repos.php');
+    
+    header( 'Location: ../success.php') ;
 //    $sql = "INSERT INTO users (user_full_name, reg_date) VALUES ("
 //    print_r($json);
 //    $res = json_decode($res);

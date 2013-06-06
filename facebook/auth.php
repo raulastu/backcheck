@@ -14,7 +14,7 @@
   $url .= '?client_id='.FACEBOOK_APP_ID;
   $url .= '&state=23234';
   $url .= '&redirect_uri='.FACEBOOK_CALLBACK; // change to your 4sq callback
-  $url .= '&scope=email,read_friendlists,publish_stream,user_status,read_stream';
+  $url .= '&scope=email,read_friendlists,user_status,read_stream';
   $url .= '&response_type=code';
   
 

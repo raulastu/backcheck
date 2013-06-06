@@ -1,6 +1,5 @@
 <?php
-    error_reporting(E_ALL);
-    ini_set('display_errors', '1');
+    include_once '../utils/globals.php';
     include('../dbaccess.php');
 //print_r( $gr->getRepoDetails('mii') );
 //    $userGHId= 'raulooo';
@@ -26,7 +25,7 @@
     // // $result value is json {access_token: ACCESS_TOKEN}
     
     $arr = json_decode($resp);
-    print_r($arr);
+//    print_r($arr);
 //    print_r();
     $os = array("gay", "faggot", "anus", "ass", "damn");
     $racist = array("ginger");

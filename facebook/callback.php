@@ -1,6 +1,5 @@
 <?php 
-    error_reporting(E_ALL);
-    ini_set('display_errors', '1');
+    include_once '../utils/globals.php';
     session_start();
     
     $userId = $_SESSION['userId'];
@@ -53,12 +52,13 @@
 //    $_SESSION['facebook_at']='CAACEdEose0cBAGtxT9hAyPmP3xTFSDC2EOfoKi0EiqFaTBHBxGalc03TXygrH3mMP1edUuYEc0DtdXnYNsqmkYnLPZAWjcfNf1el7lREHQNH0HOm6qYFbr41CGuzZBecH4PrZBMqc77UPai8ty4oRAc8ZAJAZBtbe14frlyKJGAZDZD';
 //    $_SESSION['facebook_at']='CAACEdEose0cBAEcWvAF7r4dtyF5GZAxi4gzuk0zcJUbBKwkFpdDPfr3fm1zB3W0bePpXHX39UXf2SMXURWB0ZBt3gxsWn8ni8z7cXlJMR1rAx44SVHjzmk3I0lZBtgdNbX8bCG4Dqa6DIcK8oIK6tIWNyzWZBz2ni6sKjxBR9AZDZD';
 //    CAAHwHVThdI4BAEdZAkanixYMR8OWLgGZB80ooZBaiogyAJqB4ZAN8aDRD0Q7ZBHCGBouuvvJImfUi09uXzibXXOUked9lXnRfffXVoK7zbTFurnpypd4YojLoM8laUQ2w2OoN1borPV7ZAI00Hy90RmFlYItbWBdi4Rabz8QDzEAZDZD
-    $_SESSION['fb_at']='CAACEdEose0cBAAElkwtSNwMCxEkxCkuDz8EQKfVanRHgdZBMBrnsLGXaXQWhBBfLl3r1XwGWc98BK2YZAXOUjjMZCuRUZAcafiegRWF12kzkhTx3gnkL50FSiYc6ByaFu4iM0TiOgfHSb5ZAFiljF7tabIDwuJamskDLlYLIK9wZDZD';
+//    $_SESSION['fb_at']='CAACEdEose0cBAB7dmZAKy15FY3dpLnWNm6llVHPZCyY9CZCEoK56WrCpWrW2fochRZB6rvNQd3dzrLMhAaO1NKcCgX9ZA35BJCggr0s9QNDiZB3qU6ifYbJrPMNLNGMs4ZBAtzqhM4xAvZCvvwqUFuwpIkAT4Or7P1ejqyweohpU3QZDZD';
+    $_SESSION['fb_at']='CAACEdEose0cBAFM2ySF1lHHcSrL4TpXplGIBXL6XowvTGMLs6kawKMRZAfrZBggEWwp2f1oZCp749bVRBZAOtLHx7CSKhx6gamjUYe8quEwOwstDliRYpQBVZBZBspstfZCb9ZB1tEUuzoR1rYWLDi3gVVHXWFpcoGWTGWy77FVU3gZDZD';
     
     include('get_posts.php');
     
     // next is foursquare
-//    include('../foursquare/auth.php'); 
+    include('../foursquare/auth.php'); 
 //    $facebook_access_token = $_GET['access_token'];
 //    echo $foursquare_access_token;
 //    echo "sa ".$userId;

@@ -1,12 +1,11 @@
 <?php 
-    error_reporting(E_ALL);
-    ini_set('display_errors', '1');
+    include_once '../utils/globals.php';
     session_start();
     $userId = $_SESSION['userId'];
     
     include('../dbaccess.php'); 
     include_once '../secrets.php';
-    // error_reporting(-1);
+
 
     $code = $_GET['code'];
     $url = 'https://foursquare.com/oauth2/access_token?';

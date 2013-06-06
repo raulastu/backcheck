@@ -62,6 +62,7 @@ $(document).ready(function() {
 
     $('#rc_followers').html(data.data[0].n_followers);
     $('#rc_repos').html(data.data[0].n_repos);
+    $('#rc_contributions').html(23);
   });
   
   
@@ -92,9 +93,9 @@ $(document).ready(function() {
         return;
     $('#rc_stackoverflow_username').html(data.users[0].display_name);
     $('#rc_reputation').html(data.users[0].reputation);
-    $('#rc_gold').html(data.users[0].badge_counts.gold);
-    $('#rc_silver').html(data.users[0].badge_counts.silver);
-    $('#rc_bronze').html(data.users[0].badge_counts.bronze);
+    $('#rc_gold').html(1);
+    $('#rc_silver').html(31);
+    $('#rc_bronze').html(323);
     $('#rc_answers').html(data.users[0].answer_count);
 //    var img = "<img alt=\"Jordan-crook\" src=\"http://s3.amazonaws.com/angelhack/people/33/gray_small/jordan-crook.jpg?1349186894\" />";
 //        var row = $('<div class="row"></div>');

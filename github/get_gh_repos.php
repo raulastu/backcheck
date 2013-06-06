@@ -22,10 +22,13 @@
     // // $result value is json {access_token: ACCESS_TOKEN}
     
     $arr = json_decode($resp);
-    print_r($arr);
+//    print_r($arr);
     $langs = array();
     foreach($arr as $ob){
-        $langs[$ob->language]++;
+        if(!isset($langs[$ob->language])){
+            $langs[$ob->language]=0;
+        }else
+            $langs[$ob->language]++;
 //        print_r($ob->language);
     }
     foreach (array_keys($langs)as $ob){
@@ -35,5 +38,5 @@
         $reg = mysql_query($sql);
 //        echo $sql;
     }
-    print_r($langs);
+//    print_r($langs);
 ?>

@@ -42,7 +42,7 @@
 <li>
 <a class='nav-logo' href='/#' style="background-image:url('img/hat.png'); background-size:52px 40px;"></a>
 </li>
-<li><a href="/accelerator">Accelerator</a></li>
+<li><a href="/accelerator">Raul Ramirez's Hackground</a></li>
 <li><a href="/#sponsors">Prospect Requests</a></li>
 <li><a href="/schedule">Advancers</a></li>
 <li><a href="http://logout.php">Logout</a></li>
@@ -229,6 +229,31 @@ Checking your prospects' background was never this real!
 </div>
 </a>
 </div>
+
+<div class='date-box'>
+<a href='http://ahsp13la.eventbrite.com/'>
+<div class='city-name'>BOOKS READ</div>
+<div class='month'>
+--
+</div>
+<div class='date'>
+/--
+</div>
+</a>
+</div>
+    
+<div class='date-box'>
+<a href='http://ahsp13la.eventbrite.com/'>
+<div class='city-name'>School</div>
+<div class='month'>
+--
+</div>
+<div class='date'>
+/--
+</div>
+</a>
+</div>
+    
 </div>
 </div>
 </section>
@@ -271,8 +296,8 @@ Checking your prospects' background was never this real!
 Repos
 </p>
 </div>
-<div class='number_of_investors'>
-<p>
+<div  class='number_of_investors'>
+<p id="rc_contributions">
 --
 </p>
 <p>Contributions</p>
@@ -309,13 +334,13 @@ Repos
 </p>
 <p>Reputation</p>
 </div>
-<div class='teams' style="background-image:url('img/bronze-badge.png'); background-size: 50px 50px;">
+<div class='teams' style="background-image:url('img/reputation.png'); background-size: 50px 50px;">
 <p id="rc_gold">
 --
 </p>
 <p>Gold</p>
 </div>
-<div class='prize_money'>
+<div class='prize_money' style="background-image:url('img/silver-badge.png'); background-size: 50px 50px;">
 <p id="rc_silver">
 --
 </p>
