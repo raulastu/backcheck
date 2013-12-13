@@ -1,0 +1,17 @@
+delete from github_report;
+delete  from github_languages;
+delete from foursquare_badges;
+delete from facebook_score;
+
+delete  from users;
+
+
+https://foursquare.com/img/badge/allbadges.
+png?oauth_token=JRTHZ1LYO24YHAWENOAUNRTDVWOZ2QVXO5D0305BLKUCI33R&v=20130602
+
+
+
+https://api.foursquare.com/v2/users/self/venuehistory?oauth_token=
+
+
+https://playfoursquare.s3.amazonaws.com/badge/400/newbie.png
